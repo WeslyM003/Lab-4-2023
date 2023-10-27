@@ -1,11 +1,10 @@
 #ifndef stats_H
 #define stats_H
 
-
-
-
+//stats class used to calculate and graph stars
 class Stats {
 private:
+	//number of stars outputed
 	int numStars;
 
 public:
@@ -13,9 +12,8 @@ public:
 	Stats();
 	//destructor
 	~Stats();
-
-	float getNumStars();
-	void calculateStars(int temperature);
+	
+	//used to read in file and graph temperatures
 	void graphTemps();
 };
 
